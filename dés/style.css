@@ -1,0 +1,103 @@
+html, body {
+    --color-1: #0b132b;
+    --color-2: #0e1f50;
+    --color-3: #fbff12;
+    --color-4: #41ead4;
+    --color-5: #ff206e;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 100px;
+    background-image: linear-gradient(135deg, var(--color-1) , var(--color-2));
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    border:  5px solid white;
+    border-radius: 10px;
+    box-shadow: -2px 6px 18px 3px rgba(213, 246, 246, 0.25);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-1);
+}
+
+
+button{
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 60px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    Border: 2px solid var(--color-4) ;
+    color:var(--color-4);
+    background: none;
+    transition: all .2s ease-in-out;
+}
+#rollBtn:hover{
+    background-color:var(--color-4) ;
+    color:white;
+}
+
+#resetBtn {
+    Border: 2px solid var(--color-5) ;
+    color:var(--color-5);
+    background: none;
+}
+#resetBtn:hover{
+    background-color: var(--color-5);
+    color: white;
+    transition: all .2s ease-in-out;
+}
+.img-dice{
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+
+}
+svg{
+    height: auto;
+    width: 100%;
+
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(213, 246, 246, 0.45);
+}
